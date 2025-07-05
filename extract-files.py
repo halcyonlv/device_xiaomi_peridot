@@ -77,7 +77,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
             'android.hardware.graphics.allocator-V2-ndk.so'
-    ),
+        ),
+    'odm/lib64/hw/camera.xiaomi.so': blob_fixup()
+        .replace_needed(
+            'libui.so', 
+            'libui-v34.so'
+        ),
     (
         'odm/lib64/camera/com.qti.actuator.peridot_aac_imx882_gt9764ber_wide_i_actuator.so',
         'odm/lib64/camera/com.qti.actuator.peridot_ofilm_imx882_aw86016csr_wide_ii_actuator.so',
@@ -193,7 +198,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
             'android.hardware.graphics.allocator-V2-ndk.so'
-    ),
+        ),
     (
         'odm/lib64/libcamxcommonutils.so',
         'odm/lib64/libmialgoengine.so',
@@ -223,7 +228,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'libaudioroute.so',
             'libaudioroute-v34.so'
-    ),
+        ),
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
     (
@@ -237,7 +242,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'libcppbor_external.so',
             'libcppbor_peridot.so'
-    ),
+        ),
     (
         'vendor/bin/qcc-vendor',
         'vendor/bin/qms',
