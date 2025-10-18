@@ -162,6 +162,9 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/touch-drivers \
     nxp/opensource/driver
 
+# MiuiCamera
+-include device/xiaomi/peridot-miuicamera/BoardConfig.mk
+
 # Partitions
 -include vendor/halcyon/config/BoardConfigReservedSize.mk
 
