@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayPeridot \
     CarrierConfigOverlayPeridot \
     FrameworkOverlayPeridot \
+    NestLauncherOverlayPeridot \
     NfcOverlayPeridot \
     SecureElementOverlayPeridot \
     SettingsOverlayPeridot \
