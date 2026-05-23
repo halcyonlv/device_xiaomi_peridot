@@ -202,9 +202,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.kernel.post_boot-cliffs_2_2_1.sh \
-    init.kernel.post_boot-cliffs_2_3_0.sh \
-    init.kernel.post_boot-cliffs_3_3_1.sh \
     init.kernel.post_boot-cliffs_default_3_4_1.sh \
     init.kernel.post_boot-cliffs.sh \
     init.kernel.post_boot-memory.sh \
