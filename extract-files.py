@@ -111,7 +111,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/hw/vendor.qti.hardware.display.composer-service',
         'vendor/lib64/libaudiocloudctrl.so',
         'vendor/lib64/libdpps.so',
-        'vendor/lib64/liblearningmodule.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed(
